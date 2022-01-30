@@ -57,11 +57,11 @@
     Note
         only FIRST matched param will be considered as filter param
 
-# Tests
+### Tests
 
     to run tests just run ```docker-compose run sayollo pytest tests/ -v```
 
-# Test concurrent incrementation
+### Test concurrent incrementation
 
     1. pipenv shell
     
@@ -82,6 +82,7 @@
        For example validation not checks param values like in statistics filter
     2. Tests do not cover all cases and are not divided by concerns
     3. Vast external api can be defined as ENV variable
-    4. For having persistence data in Redis we can add volume to Redis service and turn on the append-only function
-    5. To have more complex functionality in Redis we can use Lua script and add custom functions to Redis
-    6. To have more high load and/or complex analytics we can transform data and then move it to a more relevant database for analytics like AWS redshift
+    4. Have a docker for deferent modes like development, production
+    5. For having persistence data in Redis we can add volume to Redis service and turn on the append-only function
+    6. To have more complex functionality in Redis we can use Lua script and add custom functions to Redis
+    7. To have more high load and/or complex analytics we can transform data and then move it to a more relevant database for analytics like AWS redshift
